@@ -1,0 +1,112 @@
+{
+  "breadcrumbs.enabled": false,
+  "bracketPairColorizer.activeScopeCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {color}; opacity: 0.5"
+  ],
+  "blade.format.enable": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.matchBrackets": "always",
+  "editor.renderControlCharacters": false,
+  "editor.fontFamily": "Operator Mono Lig Book",
+  "editor.fontLigatures": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.formatOnSave": true,
+  "editor.smoothScrolling": true,
+  "editor.fontSize": 15,
+  "editor.fontWeight": "600",
+  "editor.wordWrap": "off",
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.cursorStyle": "line-thin",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "expand",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "explorer.confirmDragAndDrop": false,
+  "explorer.openEditors.visible": 0,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false
+  },
+  "[php]": {
+    "editor.defaultFormatter": "kokororin.vscode-phpfmt",
+    "editor.wordWrap": "on"
+  },
+  "phpfmt.psr2": true,
+  "phpfmt.exclude": ["AllmanStyleBraces"],
+  "phpfmt.passes": ["AlignDoubleArrow", "ShortArray"],
+  "phpfmt.cakephp": false,
+  "prettier.printWidth": 100,
+  "prettier.endOfLine": "auto",
+  "prettier.jsxBracketSameLine": true,
+  "prettier.trailingComma": "none",
+  "prettier.tabWidth": 2,
+  "prettier.singleQuote": true,
+  "sync.gist": "7073e13aa60fd1436c9424041ffaa333",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false
+  },
+  "vetur.format.options.tabSize": 2,
+  "vetur.format.enable": true,
+  "vetur.validation.template": false,
+  "vetur.format.defaultFormatter.html": "prettyhtml",
+  "vetur.format.options.useTabs": true,
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "auto"
+    },
+    "prettyhtml": {
+      "printWidth": 200,
+      "singleQuote": false,
+      "wrapAttributes": false,
+      "sortAttributes": true
+    }
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "off"
+  },
+  "vetur.format.defaultFormatter.ts": "vscode-typescript",
+  "window.zoomLevel": 0,
+  "window.titleBarStyle": "custom",
+  "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.editor.untitled.labelFormat": "name",
+  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}"
+}

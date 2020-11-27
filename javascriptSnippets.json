@@ -1,0 +1,21 @@
+{
+  // console.log snippet
+  "Print to console": {
+    "prefix": "clg",
+    "body": ["console.log($1);"],
+    "description": "Log output to console"
+  },
+  // axios then & catch snippet
+  "Axios then & catch": {
+    "prefix": "thenc",
+    "body": [
+      ".then((response) => {",
+      "  console.log(response)",
+      "})",
+      ".catch((error) => {",
+      "  console.log(error)",
+      "});"
+    ],
+    "description": "Log output to thenc"
+  }
+}

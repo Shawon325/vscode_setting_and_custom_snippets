@@ -25,6 +25,11 @@
   "editor.cursorStyle": "line-thin",
   "editor.cursorSmoothCaretAnimation": true,
   "editor.cursorBlinking": "expand",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": false
+  },
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -40,6 +45,30 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
+
+  // "intelephense.files.exclude": [
+  //   "**/.git/**",
+  //   "**/.svn/**",
+  //   "**/.hg/**",
+  //   "**/CVS/**",
+  //   "**/.DS_Store/**",
+  //   "**/node_modules/**",
+  //   "**/bower_components/**",
+  //   "**/vendor/**/{Tests,tests}/**",
+  //   "**/.history/**",
+  //   "**/vendor/**/vendor/**"
+  // ],
+
+  "intelephense.files.exclude": [
+    "**/.git/**",
+    "**/.svn/**",
+    "**/.hg/**",
+    "**/CVS/**",
+    "**/.DS_Store/**",
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**/{Test,test,Tests,tests}/**/*Test.php"
+  ],
 
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[javascript]": {
@@ -68,6 +97,7 @@
     "editor.defaultFormatter": "kokororin.vscode-phpfmt",
     "editor.wordWrap": "on"
   },
+  "php.suggest.basic": true,
   "phpfmt.psr2": true,
   "phpfmt.exclude": ["AllmanStyleBraces"],
   "phpfmt.passes": ["AlignDoubleArrow", "ShortArray"],
@@ -125,3 +155,4 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
+

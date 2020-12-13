@@ -78,6 +78,7 @@
 		"editor.insertSpaces": true,
 		"editor.detectIndentation": false
 	},
+
 	"[javascriptreact]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.formatOnSave": true,
@@ -171,10 +172,9 @@
 	"window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
 	"workbench.colorTheme": "Monokai Dimmed",
 	"workbench.colorCustomizations": {
-    "statusBar.background": "#B48EAD",
-    "statusBar.noFolderBackground": "#B48EAD",
-    "statusBar.debuggingBackground": "#B48EAD",
-    "statusBar.foreground": "#434C5E"
-  }
+		"statusBar.background": "#B48EAD",
+		"statusBar.noFolderBackground": "#B48EAD",
+		"statusBar.debuggingBackground": "#B48EAD",
+		"statusBar.foreground": "#434C5E"
+	}
 }
-

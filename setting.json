@@ -78,6 +78,7 @@
 		"editor.insertSpaces": true,
 		"editor.detectIndentation": false
 	},
+
 	"[javascriptreact]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.formatOnSave": true,
@@ -100,13 +101,17 @@
 		"editor.defaultFormatter": "kokororin.vscode-phpfmt",
 		"editor.wordWrap": "on"
 	},
-	"php-docblocker.extra": ["@author Md. Shahidul Bhuiyan"],
 	"php.suggest.basic": true,
 	"phpfmt.psr2": true,
 	"phpfmt.exclude": ["AllmanStyleBraces"],
 	"phpfmt.passes": ["AlignDoubleArrow", "ShortArray"],
 	"phpfmt.cakephp": false,
 	"phpfmt.enable_auto_align": true,
+	"phpcs.enable": true,
+	"phpcs.standard": "WordPress",
+	"phpcs.executablePath": "./vendor/bin/phpcs",
+	"phpcs.showWarnings": true,
+	"phpcs.composerJsonPath": "composer.json",
 	"prettier.printWidth": 100,
 	"prettier.endOfLine": "auto",
 	"prettier.jsxBracketSameLine": true,
@@ -145,7 +150,19 @@
 		"editor.tabSize": 2,
 		"editor.wordWrap": "off"
 	},
-	"vetur.format.defaultFormatter.ts": "vscode-typescript",
+
+	"vim.statusBarColorControl": true,
+	"vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
+	"vim.statusBarColors.insert": "#BF616A",
+	"vim.statusBarColors.visual": "#B48EAD",
+	"vim.statusBarColors.visualline": "#B48EAD",
+	"vim.statusBarColors.visualblock": "#A3BE8C",
+	"vim.statusBarColors.replace": "#D08770",
+	"vim.statusBarColors.commandlineinprogress": "#007ACC",
+	"vim.statusBarColors.searchinprogressmode": "#007ACC",
+	"vim.statusBarColors.easymotionmode": "#007ACC",
+	"vim.statusBarColors.easymotioninputmode": "#007ACC",
+	"vim.statusBarColors.surroundinputmode": "#007ACC",
 
 	"window.zoomLevel": 0,
 	"window.titleBarStyle": "custom",
@@ -153,6 +170,11 @@
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.editor.untitled.labelFormat": "name",
 	"window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
-	"workbench.colorTheme": "Monokai"
+	"workbench.colorTheme": "Monokai Dimmed",
+	"workbench.colorCustomizations": {
+		"statusBar.background": "#B48EAD",
+		"statusBar.noFolderBackground": "#B48EAD",
+		"statusBar.debuggingBackground": "#B48EAD",
+		"statusBar.foreground": "#434C5E"
+	}
 }
-

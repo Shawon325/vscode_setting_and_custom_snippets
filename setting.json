@@ -5,9 +5,13 @@
 		"borderColor : {color}; opacity: 0.5"
 	],
 	"breadcrumbs.filePath": "last",
+	"breadcrumbs.enabled": false,
+
+	"cSpell.userWords": ["Queueable", "swal", "sweetalert", "toastify"],
 
 	"editor.minimap.enabled": false,
 	"editor.renderWhitespace": "none",
+	"editor.fontSize": 13,
 	"editor.matchBrackets": "always",
 	"editor.renderControlCharacters": false,
 	"editor.fontFamily": "Operator Mono Lig Book",
@@ -45,19 +49,91 @@
 		"javascript": "javascriptreact"
 	},
 
-	// "intelephense.files.exclude": [
-	//   "**/.git/**",
-	//   "**/.svn/**",
-	//   "**/.hg/**",
-	//   "**/CVS/**",
-	//   "**/.DS_Store/**",
-	//   "**/node_modules/**",
-	//   "**/bower_components/**",
-	//   "**/vendor/**/{Tests,tests}/**",
-	//   "**/.history/**",
-	//   "**/vendor/**/vendor/**"
-	// ],
+	"git.showPushSuccessNotification": true,
 
+	"intelephense.stubs": [
+		"apache",
+		"redis",
+		"bcmath",
+		"bz2",
+		"calendar",
+		"com_dotnet",
+		"Core",
+		"ctype",
+		"curl",
+		"date",
+		"dba",
+		"dom",
+		"enchant",
+		"exif",
+		"fileinfo",
+		"filter",
+		"fpm",
+		"ftp",
+		"gd",
+		"hash",
+		"iconv",
+		"imap",
+		"interbase",
+		"intl",
+		"json",
+		"ldap",
+		"libxml",
+		"mbstring",
+		"mcrypt",
+		"meta",
+		"mssql",
+		"mysqli",
+		"oci8",
+		"odbc",
+		"openssl",
+		"pcntl",
+		"pcre",
+		"PDO",
+		"pdo_ibm",
+		"pdo_mysql",
+		"pdo_pgsql",
+		"pdo_sqlite",
+		"pgsql",
+		"Phar",
+		"posix",
+		"pspell",
+		"readline",
+		"recode",
+		"Reflection",
+		"regex",
+		"session",
+		"shmop",
+		"SimpleXML",
+		"snmp",
+		"soap",
+		"sockets",
+		"sodium",
+		"SPL",
+		"sqlite3",
+		"standard",
+		"superglobals",
+		"sybase",
+		"sysvmsg",
+		"sysvsem",
+		"sysvshm",
+		"tidy",
+		"tokenizer",
+		"wddx",
+		"xml",
+		"xmlreader",
+		"xmlrpc",
+		"xmlwriter",
+		"Zend OPcache",
+		"zip",
+		"zlib"
+	],
+	"intelephense.telemetry.enabled": false,
+	"intelephense.format.enable": true,
+	"intelephense.completion.triggerParameterHints": true,
+	"intelephense.completion.insertUseDeclaration": true,
+	"intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
+	"intelephense.trace.server": "messages",
 	"intelephense.files.exclude": [
 		"**/.git/**",
 		"**/.svn/**",
@@ -66,7 +142,14 @@
 		"**/.DS_Store/**",
 		"**/node_modules/**",
 		"**/bower_components/**",
-		"**/vendor/**/{Test,test,Tests,tests}/**/*Test.php"
+		"**/storage",
+		"**/storage/**",
+		"**/tests/**",
+		"**/resources/views/**",
+		"**/database/migrations/**",
+		"**/storage/framework/views/**",
+		"_ide_helper.php",
+		"_ide_helper_models"
 	],
 
 	"javascript.updateImportsOnFileMove.enabled": "always",
@@ -97,12 +180,14 @@
 	},
 
 	"[php]": {
-		"editor.defaultFormatter": "kokororin.vscode-phpfmt",
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
 		"editor.wordWrap": "on"
 	},
 	// "php-docblocker.extra": ["@author Shawon mynameisshawon325@email.com"],
 
-	"php.suggest.basic": true,
+	"php.suggest.basic": false,
+	"php.validate.enable": false,
+	"php-docblocker.qualifyClassNames": true,
 
 	"phpfmt.psr2": true,
 	"phpfmt.exclude": ["AllmanStyleBraces"],
@@ -110,7 +195,7 @@
 	"phpfmt.cakephp": false,
 	"phpfmt.enable_auto_align": true,
 
-	"phpcs.standard": "/home/professor/phpcs.xml",
+	"phpcs.standard": "/home/shawon/phpcs.xml",
 	"phpcs.enable": true,
 	"phpcs.autoConfigSearch": true,
 	"phpcs.showWarnings": true,
@@ -124,7 +209,19 @@
 	"prettier.singleQuote": true,
 	"prettier.jsxBracketSameLine": true,
 
-	"sync.gist": "7073e13aa60fd1436c9424041ffaa333",
+	"search.collapseResults": "alwaysCollapse",
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"**/.git": true,
+		"**/storage": true,
+		"**/tests": true,
+		"_ide_helper.php": true,
+		"_ide_helper_models.php": true,
+		"package-lock.json": true
+	},
+
+	// "sync.gist": "7073e13aa60fd1436c9424041ffaa333",
 
 	"[typescript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -160,7 +257,9 @@
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.editor.untitled.labelFormat": "name",
 	"window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
-	"workbench.colorTheme": "GitHub Dark",
-	"editor.fontSize": 13,
-	"cSpell.userWords": ["swal", "sweetalert", "toastify"]
+	"workbench.colorTheme": "BeardedTheme Arc Eolstorm",
+	"workbench.colorCustomizations": {
+		"tab.activeBackground": "#3472c4"
+	}
 }
+

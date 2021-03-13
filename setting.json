@@ -4,17 +4,31 @@
 		"borderWidth : 1px",
 		"borderColor : {color}; opacity: 0.5"
 	],
-	"breadcrumbs.filePath": "last",
 	"breadcrumbs.enabled": false,
+	"breadcrumbs.filePath": "last",
 
-	"cSpell.userWords": ["Queueable", "swal", "sweetalert", "toastify"],
+	"cSpell.userWords": [
+		"Arrayable",
+		"Csrf",
+		"Dispatchable",
+		"Macroable",
+		"Otwell",
+		"PJAX",
+		"Queueable",
+		"Toastr",
+		"laravel",
+		"swal",
+		"sweetalert",
+		"toastify",
+		"upzilla"
+	],
 
+	"editor.fontSize": 11.2,
 	"editor.minimap.enabled": false,
 	"editor.renderWhitespace": "none",
-	"editor.fontSize": 13,
 	"editor.matchBrackets": "always",
 	"editor.renderControlCharacters": false,
-	"editor.fontFamily": "Operator Mono Lig Book",
+	"editor.fontFamily": "JetBrains Mono, Medium, Operator Mono Lig Book",
 	"editor.fontLigatures": true,
 	"editor.autoClosingBrackets": "always",
 	"editor.formatOnSave": true,
@@ -180,8 +194,7 @@
 	},
 
 	"[php]": {
-		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
-		"editor.wordWrap": "on"
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
 	},
 	// "php-docblocker.extra": ["@author Shawon mynameisshawon325@email.com"],
 
@@ -251,15 +264,17 @@
 		"editor.wordWrap": "off"
 	},
 
-	"window.zoomLevel": 0,
+	"window.zoomLevel": 0.3,
 	"window.titleBarStyle": "custom",
 	"workbench.editor.enablePreview": false,
-	"workbench.iconTheme": "vscode-icons",
+	"workbench.iconTheme": "material-icon-theme",
 	"workbench.editor.untitled.labelFormat": "name",
 	"window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
-	"workbench.colorTheme": "BeardedTheme Arc Eolstorm",
 	"workbench.colorCustomizations": {
-		"tab.activeBackground": "#3472c4"
-	}
+		"tab.activeBackground": "#438ff3"
+	},
+	"workbench.editor.wrapTabs": true,
+  "workbench.editor.decorations.badges": true,
+  "workbench.colorTheme": "Monokai"
 }
 

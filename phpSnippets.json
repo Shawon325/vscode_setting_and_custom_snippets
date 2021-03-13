@@ -1,20 +1,27 @@
 {
-  // Laravel resource route
-  "Print to resource route": {
-    "prefix": "Route::resource",
-    "body": ["Route::resource('path', 'Controller');"],
-    "description": "Log output to console"
-  },
-  // Laravel get route
-  "Print to get route": {
-    "prefix": "Route::get",
-    "body": ["Route::get('path', 'Controller');"],
-    "description": "Log output to console"
-  },
-  // Laravel post route
-  "Print to post route": {
-    "prefix": "Route::post",
-    "body": ["Route::post('path', 'Controller');"],
-    "description": "Log output to console"
-  }
+	// Laravel resource route
+	"Print to resource route": {
+		"prefix": "Route::resource",
+		"body": ["Route::resource('$1', '$2');"],
+		"description": "Log output to console"
+	},
+	// Laravel get route
+	"Print to get route": {
+		"prefix": "Route::get",
+		"body": ["Route::get('$1', '$2');"],
+		"description": "Log output to console"
+	},
+	// Laravel post route
+	"Print to post route": {
+		"prefix": "Route::post",
+		"body": ["Route::post('$1', '$2');"],
+		"description": "Log output to console"
+	},
+	// Laravel delete route
+	"Print to delete route": {
+		"prefix": "Route::delete",
+		"body": ["Route::delete('$1', '$2');"],
+		"description": "Log output to console"
+	}
 }
+

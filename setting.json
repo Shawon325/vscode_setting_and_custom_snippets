@@ -1,4 +1,5 @@
 {
+	"angular.experimental-ivy": true,
 	"bracketPairColorizer.activeScopeCSS": [
 		"borderStyle : solid",
 		"borderWidth : 1px",
@@ -7,33 +8,17 @@
 	"breadcrumbs.enabled": false,
 	"breadcrumbs.filePath": "last",
 
-	"cSpell.userWords": [
-		"Arrayable",
-		"Csrf",
-		"Dispatchable",
-		"Macroable",
-		"Otwell",
-		"PJAX",
-		"Queueable",
-		"Toastr",
-		"laravel",
-		"swal",
-		"sweetalert",
-		"toastify",
-		"upzilla"
-	],
-
-	"editor.fontSize": 11.2,
+	"editor.fontSize": 13.5,
 	"editor.minimap.enabled": false,
 	"editor.renderWhitespace": "none",
 	"editor.matchBrackets": "always",
 	"editor.renderControlCharacters": false,
-	"editor.fontFamily": "JetBrains Mono, Medium, Operator Mono Lig Book",
+	"editor.fontFamily": "Operator Mono Lig Book, JetBrains Mono Medium, Fira code Medium",
 	"editor.fontLigatures": true,
 	"editor.autoClosingBrackets": "always",
 	"editor.formatOnSave": true,
 	"editor.smoothScrolling": true,
-	"editor.fontWeight": "600",
+	"editor.fontWeight": "500",
 	"editor.wordWrap": "off",
 	"editor.tabSize": 4,
 	"editor.insertSpaces": true,
@@ -57,11 +42,15 @@
 		]
 	},
 	"editor.suggestSelection": "first",
+	"editor.rulers": [100],
+	"editor.lineNumbers": "on",
 	"explorer.confirmDragAndDrop": false,
 	"explorer.openEditors.visible": 0,
 	"emmet.includeLanguages": {
 		"javascript": "javascriptreact"
 	},
+
+	"files.defaultLanguage": "{activeEditorLanguage}",
 
 	"git.showPushSuccessNotification": true,
 
@@ -170,7 +159,7 @@
 	"[javascript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.formatOnSave": true,
-		"editor.tabSize": 2,
+		"editor.tabSize": 4,
 		"editor.insertSpaces": true,
 		"editor.detectIndentation": false
 	},
@@ -178,14 +167,16 @@
 	"[javascriptreact]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.formatOnSave": true,
-		"editor.tabSize": 2,
+		"editor.tabSize": 4,
 		"editor.insertSpaces": true,
-		"editor.detectIndentation": false
+		"editor.detectIndentation": false,
+		"editor.suggestSelection": "recentlyUsed",
+		"editor.suggest.showKeywords": false
 	},
 	"[jsonc]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.formatOnSave": true,
-		"editor.tabSize": 2,
+		"editor.tabSize": 4,
 		"editor.insertSpaces": true,
 		"editor.detectIndentation": false
 	},
@@ -193,8 +184,11 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 
+	"npm.packageManager": "npm",
+
 	"[php]": {
-		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+		"editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
 	},
 	// "php-docblocker.extra": ["@author Shawon mynameisshawon325@email.com"],
 
@@ -202,25 +196,25 @@
 	"php.validate.enable": false,
 	"php-docblocker.qualifyClassNames": true,
 
-	"phpfmt.psr2": true,
-	"phpfmt.exclude": ["AllmanStyleBraces"],
-	"phpfmt.passes": ["AlignDoubleArrow", "ShortArray"],
-	"phpfmt.cakephp": false,
-	"phpfmt.enable_auto_align": true,
+	// "phpfmt.psr2": true,
+	// "phpfmt.exclude": ["AllmanStyleBraces"],
+	// "phpfmt.passes": ["AlignDoubleArrow", "ShortArray"],
+	// "phpfmt.cakephp": false,
+	// "phpfmt.enable_auto_align": true,
 
-	"phpcs.standard": "/home/shawon/phpcs.xml",
-	"phpcs.enable": true,
-	"phpcs.autoConfigSearch": true,
-	"phpcs.showWarnings": true,
+	// "phpcs.standard": "/home/shawon/phpcs.xml",
+	// "phpcs.enable": true,
+	// "phpcs.autoConfigSearch": true,
+	// "phpcs.showWarnings": true,
 
 	"prettier.printWidth": 100,
 	"prettier.endOfLine": "auto",
-	"prettier.trailingComma": "none",
-	"prettier.tabWidth": 2,
+	"prettier.tabWidth": 4,
 	"prettier.jsxSingleQuote": true,
 	"prettier.useTabs": true,
 	"prettier.singleQuote": true,
 	"prettier.jsxBracketSameLine": true,
+	"prettier.useEditorConfig": false,
 
 	"search.collapseResults": "alwaysCollapse",
 	"search.exclude": {
@@ -234,15 +228,15 @@
 		"package-lock.json": true
 	},
 
-	// "sync.gist": "7073e13aa60fd1436c9424041ffaa333",
-
 	"[typescript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.insertSpaces": true,
 		"editor.detectIndentation": false
 	},
+	"terminal.integrated.fontSize": 12.5,
 
-	"vetur.format.options.tabSize": 2,
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"vetur.format.options.tabSize": 4,
 	"vetur.format.enable": true,
 	"vetur.validation.template": false,
 	"vetur.format.defaultFormatter.html": "prettyhtml",
@@ -258,23 +252,48 @@
 			"sortAttributes": true
 		}
 	},
-	"[vue]": {
-		"editor.defaultFormatter": "octref.vetur",
-		"editor.tabSize": 2,
-		"editor.wordWrap": "off"
-	},
-
-	"window.zoomLevel": 0.3,
+	// "[vue]": {
+	// 	"editor.defaultFormatter": "octref.vetur",
+	// 	"editor.tabSize": 4,
+	// 	"editor.wordWrap": "off"
+	// },
 	"window.titleBarStyle": "custom",
-	"workbench.editor.enablePreview": false,
+	"window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.editor.untitled.labelFormat": "name",
-	"window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
 	"workbench.colorCustomizations": {
-		"tab.activeBackground": "#438ff3"
+		"tab.activeBackground": "#586164"
 	},
 	"workbench.editor.wrapTabs": true,
-  "workbench.editor.decorations.badges": true,
-  "workbench.colorTheme": "Monokai"
+	"workbench.editor.decorations.badges": true,
+	"prettier.proseWrap": "always",
+	"prettier.trailingComma": "none",
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"prettier.arrowParens": "avoid",
+	"cSpell.userWords": [
+		"Ahmmed",
+		"autoload",
+		"azim",
+		"browserslist",
+		"defirence",
+		"GTCIP",
+		"labelledby",
+		"Lessman",
+		"lightboxes",
+		"Muulti",
+		"Parens",
+		"Ridoy",
+		"sabbir",
+		"Shakil",
+		"Shawon",
+		"simplebar",
+		"tanvir",
+		"toastr",
+		"UNPROCESSABLE",
+		"unstyled"
+	],
+	"terminal.integrated.fontFamily": "JetBrains Mono Medium"
 }
 
